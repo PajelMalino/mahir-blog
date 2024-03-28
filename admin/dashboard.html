@@ -9,7 +9,7 @@
 <body>
     <div id="sidebar">
         <h2><a href="../index.html">Mahir Blog</a></h2>
-        <a href="./dashboard.html">Beranda</a>
+        <a href="../admin/dashboard.html">Beranda</a>
         <a href="../add-article/add-article.html">Tulis Artikel</a>
         <a href="#">Pengaturan</a>
         <a href="#" class="btn-logout">Logout</a>
@@ -64,6 +64,12 @@
         </div>
     </div>
     <script>
+        function logOut() {
+            localStorage.removeItem("session");
+            window.location.href = "../auth/login.html";
+            alert("Berhasil Logout!");
+        };
+
          const modal = document.getElementById("editModal");
          let editedIndex = -1;
 
