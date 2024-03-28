@@ -79,6 +79,8 @@
 
         document.addEventListener("DOMContentLoaded", () => {
             const articles = getArticlesFromLocalStorage();
+            const userSession = getSessionFromLocalStorage();
+            console.log(articles);
             console.log(userSession);
 
             if (!userSession) {
@@ -135,6 +137,7 @@
 
             if (editedTitle !== "" || editedAuthor !== "" || editedData !== "" || editedArticle !== "") {
                 const articles = getArticlesFromLocalStorage();
+                
 
                 articles[editedIndex]= {
                     title: editedTitle,
