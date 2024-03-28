@@ -118,10 +118,10 @@
             editedIndex = index;
             const editedArticle = articles[editedIndex];
 
-            document.getElementById("title").value = editedArticle.title;
-            document.getElementById("author").value = editedArticle.author;
-            document.getElementById("date").value = editedArticle.date;
-            document.getElementById("article").value = editedArticle.article;
+            document.getElementById("title").value = editedArticle.judul;
+            document.getElementById("author").value = editedArticle.penulis;
+            document.getElementById("date").value = editedArticle.tanggal;
+            document.getElementById("article").value = editedArticle.artikel;
         }
 
         function saveEditedArticle() {
